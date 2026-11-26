@@ -1,0 +1,118 @@
+/* BookingFilters.css */
+.booking-filters {
+  background: var(--rf-white);
+  border: 1px solid var(--rf-slate-200);
+  border-radius: 20px;
+  padding: 1.35rem;
+  box-shadow: var(--rf-shadow-sm);
+}
+
+.filters-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.15rem;
+  padding-bottom: 0.85rem;
+  border-bottom: 1px solid var(--rf-slate-200);
+}
+
+.filters-header h3 {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--rf-navy-900);
+  margin: 0;
+}
+
+.header-actions {
+  display: flex;
+  gap: 0.45rem;
+}
+
+.refresh-btn,
+.advanced-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.38rem 0.65rem;
+  border-radius: 8px;
+  border: 1px solid var(--rf-slate-200);
+  background: var(--rf-slate-50);
+  color: var(--rf-slate-700);
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.refresh-btn:hover,
+.advanced-toggle:hover {
+  border-color: var(--rf-blue-500);
+  color: var(--rf-navy-900);
+}
+
+.quick-filters,
+.filter-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.advanced-filters {
+  margin-top: 0.9rem;
+  padding-top: 0.9rem;
+  border-top: 1px dashed var(--rf-slate-200);
+}
+
+.filter-group label {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--rf-slate-600);
+  margin-bottom: 0.35rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.filter-group select,
+.filter-group input {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid var(--rf-slate-200);
+  border-radius: 10px;
+  font-size: 0.9rem;
+  color: var(--rf-navy-900);
+  background: var(--rf-slate-50);
+}
+
+.filter-group select:focus,
+.filter-group input:focus {
+  outline: none;
+  border-color: var(--rf-blue-600);
+  background: var(--rf-white);
+}
+
+.filter-actions {
+  margin-top: 1.15rem;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--rf-slate-200);
+}
+
+.clear-btn {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.65rem;
+  border-radius: 10px;
+  border: 1px solid var(--rf-slate-200);
+  background: var(--rf-slate-100);
+  color: var(--rf-navy-900);
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.clear-btn:hover {
+  background: var(--rf-slate-200);
+}

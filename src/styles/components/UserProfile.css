@@ -1,0 +1,107 @@
+/* UserProfile.css */
+.user-profile-card {
+  background: var(--rf-white);
+  border: 1px solid var(--rf-slate-200);
+  border-radius: 20px;
+  padding: 1.4rem;
+  box-shadow: var(--rf-shadow-sm);
+}
+
+.user-profile-card .profile-header {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.user-profile-card .avatar img,
+.user-profile-card .avatar-fallback {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-profile-card .avatar-fallback {
+  background: linear-gradient(135deg, var(--rf-navy-900) 0%, var(--rf-blue-600) 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.25rem;
+}
+
+.profile-info {
+  min-width: 0;
+}
+
+.profile-info h3 {
+  font-size: 1.08rem;
+  font-weight: 800;
+  color: var(--rf-navy-900);
+  margin: 0 0 0.15rem;
+}
+
+.profile-info .email {
+  font-size: 0.8rem;
+  color: var(--rf-slate-500);
+  margin: 0 0 0.25rem;
+  word-break: break-word;
+}
+
+.profile-info .phone {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.82rem;
+  color: var(--rf-slate-700);
+  font-weight: 600;
+  margin: 0;
+}
+
+.user-profile-card .location {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.55rem 0.8rem;
+  background: var(--rf-slate-50);
+  border: 1px solid var(--rf-slate-200);
+  border-radius: 10px;
+  font-size: 0.84rem;
+  color: var(--rf-slate-700);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.user-profile-card .location svg {
+  color: var(--rf-blue-600);
+}
+
+.user-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+}
+
+.user-stat {
+  background: var(--rf-slate-50);
+  border: 1px solid var(--rf-slate-200);
+  border-radius: 12px;
+  padding: 0.75rem;
+  text-align: center;
+}
+
+.user-stat .stat-value {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--rf-navy-900);
+}
+
+.user-stat .stat-label {
+  display: block;
+  font-size: 0.74rem;
+  color: var(--rf-slate-500);
+  font-weight: 600;
+}

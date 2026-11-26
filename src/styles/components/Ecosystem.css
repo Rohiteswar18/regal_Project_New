@@ -1,0 +1,284 @@
+/* Ecosystem.css */
+.rf-ecosystem {
+  padding: 5.5rem 0;
+  background: linear-gradient(180deg, #F8FAFC 0%, #EEF2F8 100%);
+  border-top: 1px solid var(--rf-slate-200);
+  border-bottom: 1px solid var(--rf-slate-200);
+}
+
+.rf-ecosystem-head {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 2.75rem;
+}
+
+.rf-ecosystem-head h2 {
+  font-size: clamp(1.9rem, 3.2vw, 2.6rem);
+  font-weight: 800;
+  color: var(--rf-navy-900);
+  margin: 0.9rem 0 0.85rem;
+}
+
+.rf-ecosystem-head p {
+  font-size: 1.02rem;
+  color: var(--rf-slate-600);
+  line-height: 1.65;
+  margin: 0;
+}
+
+.rf-eco-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-bottom: 2rem;
+}
+
+.rf-eco-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1.15rem;
+  border-radius: 12px;
+  border: 1px solid var(--rf-slate-200);
+  background: var(--rf-white);
+  color: var(--rf-slate-600);
+  font-weight: 600;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: var(--rf-shadow-sm);
+}
+
+.rf-eco-tab:hover {
+  border-color: var(--rf-blue-500);
+  color: var(--rf-navy-900);
+}
+
+.rf-eco-tab.active {
+  background: linear-gradient(135deg, var(--rf-navy-900) 0%, var(--rf-blue-600) 100%);
+  color: var(--rf-white);
+  border-color: transparent;
+  box-shadow: 0 10px 24px rgba(11, 31, 58, 0.22);
+}
+
+.rf-eco-tab.active svg {
+  color: #F4C94E;
+}
+
+.rf-eco-panel {
+  background: var(--rf-white);
+  border: 1px solid var(--rf-slate-200);
+  border-radius: 24px;
+  padding: 2.25rem;
+  box-shadow: var(--rf-shadow-lg);
+  display: grid;
+  grid-template-columns: 1.25fr 0.85fr;
+  gap: 2.5rem;
+  align-items: stretch;
+}
+
+.rf-eco-panel-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.rf-eco-badge {
+  background: rgba(212, 175, 55, 0.16);
+  color: #926B0C;
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  font-family: var(--rf-font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.3rem 0.7rem;
+  border-radius: 9999px;
+  text-transform: uppercase;
+}
+
+.rf-eco-metric-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: var(--rf-slate-100);
+  border: 1px solid var(--rf-slate-200);
+  padding: 0.3rem 0.8rem;
+  border-radius: 9999px;
+  font-size: 0.8rem;
+  color: var(--rf-slate-600);
+}
+
+.rf-eco-metric-pill strong {
+  color: var(--rf-navy-900);
+}
+
+.rf-eco-title-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.rf-eco-icon-box {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, var(--rf-navy-900) 0%, var(--rf-blue-600) 100%);
+  color: #F4C94E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.rf-eco-title-row h3 {
+  font-size: 1.55rem;
+  font-weight: 800;
+  color: var(--rf-navy-900);
+  margin: 0;
+}
+
+.rf-eco-summary {
+  color: var(--rf-slate-600);
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.rf-eco-deliverables {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.85rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.rf-eco-deliverables li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+  font-size: 0.94rem;
+  color: var(--rf-slate-700);
+  font-weight: 500;
+}
+
+.rf-eco-check {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--rf-emerald-100);
+  color: var(--rf-emerald-600);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+/* Chain Visual */
+.rf-eco-chain-visual {
+  background: linear-gradient(155deg, #071326 0%, #0B1F3A 100%);
+  border-radius: 18px;
+  padding: 1.4rem;
+  color: var(--rf-white);
+  display: flex;
+  flex-direction: column;
+}
+
+.rf-eco-chain-title {
+  font-family: var(--rf-font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #F4C94E;
+  margin-bottom: 1rem;
+}
+
+.rf-eco-chain-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.rf-eco-chain-node {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  padding: 0.65rem 0.85rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.04);
+  color: #CBD5E1;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.rf-eco-chain-node:hover {
+  background: rgba(255, 255, 255, 0.09);
+}
+
+.rf-eco-chain-node.selected {
+  background: rgba(212, 175, 55, 0.16);
+  border-color: rgba(244, 201, 78, 0.6);
+  color: #FFFFFF;
+}
+
+.rf-eco-node-num {
+  font-family: var(--rf-font-mono);
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: #F4C94E;
+}
+
+.rf-eco-node-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.rf-eco-chain-node.selected .rf-eco-node-icon {
+  background: #F4C94E;
+  color: #071326;
+}
+
+.rf-eco-node-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+}
+
+.rf-eco-node-text strong {
+  font-weight: 600;
+}
+
+.rf-eco-node-text span {
+  font-family: var(--rf-font-mono);
+  font-size: 0.74rem;
+  color: #94A3B8;
+}
+
+.rf-eco-chain-node.selected .rf-eco-node-text span {
+  color: #FDE047;
+}
+
+@media (max-width: 992px) {
+  .rf-eco-panel {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+  }
+}

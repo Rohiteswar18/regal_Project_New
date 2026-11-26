@@ -1,0 +1,359 @@
+/* PigNutrition.css */
+.rf-nutrition-page {
+  min-height: 100vh;
+  background: var(--rf-slate-50);
+  padding-bottom: 4.5rem;
+}
+
+.rf-nutri-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 0.65rem;
+}
+
+.rf-nutri-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.55rem 1rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: rgba(255, 255, 255, 0.08);
+  color: #E2E8F0;
+  font-size: 0.84rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.rf-nutri-tab:hover {
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.rf-nutri-tab.active {
+  background: linear-gradient(135deg, #D4AF37 0%, #F4C94E 100%);
+  color: #071326;
+  border-color: transparent;
+  font-weight: 700;
+}
+
+.rf-nutri-container {
+  max-width: 1280px;
+  margin: -1.5rem auto 0;
+  padding: 0 1.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.rf-stage-bar {
+  background: var(--rf-white);
+  border: 1px solid var(--rf-slate-200);
+  border-radius: 20px;
+  padding: 1.35rem 1.65rem;
+  box-shadow: var(--rf-shadow-md);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.rf-stage-bar h2 {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--rf-navy-900);
+  margin: 0 0 0.2rem;
+}
+
+.rf-stage-bar p {
+  font-size: 0.88rem;
+  color: var(--rf-slate-500);
+  margin: 0;
+}
+
+.rf-stage-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.rf-stage-pill {
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  border: 1px solid var(--rf-slate-200);
+  background: var(--rf-slate-50);
+  color: var(--rf-slate-700);
+  font-weight: 700;
+  font-size: 0.86rem;
+  cursor: pointer;
+}
+
+.rf-stage-pill.active {
+  background: linear-gradient(135deg, var(--rf-navy-900) 0%, var(--rf-blue-600) 100%);
+  color: white;
+  border-color: transparent;
+}
+
+.rf-nutri-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.rf-nutri-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.rf-nutri-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.rf-nutri-card {
+  background: var(--rf-white);
+  border: 1px solid var(--rf-slate-200);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--rf-shadow-sm);
+}
+
+.rf-nutri-card-head {
+  padding: 1.15rem 1.4rem;
+  background: linear-gradient(135deg, var(--rf-navy-900) 0%, var(--rf-navy-800) 100%);
+  color: white;
+  border-bottom: 2px solid var(--rf-gold-500);
+}
+
+.rf-nutri-card-head.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.rf-nutri-card-head h3 {
+  font-size: 1.08rem;
+  font-weight: 700;
+  margin: 0;
+  color: white;
+}
+
+.rf-price-badge {
+  background: rgba(244, 201, 78, 0.2);
+  color: #FDE047;
+  border: 1px solid rgba(244, 201, 78, 0.45);
+  padding: 0.25rem 0.65rem;
+  border-radius: 9999px;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.rf-nutri-card-body {
+  padding: 1.35rem 1.4rem;
+}
+
+.rf-req-row {
+  margin-bottom: 0.95rem;
+}
+
+.rf-req-row:last-child {
+  margin-bottom: 0;
+}
+
+.rf-req-top {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.86rem;
+  margin-bottom: 0.35rem;
+}
+
+.rf-req-top span {
+  color: var(--rf-slate-700);
+  font-weight: 600;
+}
+
+.rf-req-top strong {
+  color: var(--rf-navy-900);
+}
+
+.rf-req-track {
+  height: 8px;
+  border-radius: 9999px;
+  background: var(--rf-slate-100);
+  overflow: hidden;
+}
+
+.rf-req-fill {
+  height: 100%;
+  border-radius: 9999px;
+  background: linear-gradient(90deg, var(--rf-navy-900), var(--rf-blue-500));
+}
+
+.rf-nutri-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.rf-nutri-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  font-size: 0.9rem;
+  color: var(--rf-slate-700);
+  line-height: 1.45;
+}
+
+.rf-nutri-list svg.emerald {
+  color: var(--rf-emerald-600);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.rf-nutri-list svg.gold {
+  color: var(--rf-gold-600);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.rf-nutri-table-wrap {
+  overflow-x: auto;
+  padding: 0.5rem 1.25rem 1.25rem;
+}
+
+.rf-nutri-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.rf-nutri-table th {
+  text-align: left;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--rf-slate-500);
+  padding: 0.75rem 0.6rem;
+  border-bottom: 1px solid var(--rf-slate-200);
+}
+
+.rf-nutri-table td {
+  padding: 0.8rem 0.6rem;
+  border-bottom: 1px solid var(--rf-slate-100);
+  font-size: 0.88rem;
+  color: var(--rf-slate-700);
+}
+
+.rf-cost-pill {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 9999px;
+  background: var(--rf-slate-100);
+  color: var(--rf-navy-900);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.rf-supplements-grid {
+  padding: 1.25rem 1.4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 0.9rem;
+}
+
+.rf-supp-box {
+  background: var(--rf-slate-50);
+  border: 1px solid var(--rf-slate-200);
+  border-radius: 12px;
+  padding: 0.95rem;
+}
+
+.rf-supp-box h4 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--rf-navy-900);
+  margin: 0 0 0.25rem;
+}
+
+.rf-supp-box p {
+  font-size: 0.82rem;
+  color: var(--rf-slate-600);
+  margin: 0;
+}
+
+.rf-sub-h4 {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--rf-slate-500);
+  margin: 0.9rem 0 0.5rem;
+}
+
+.rf-sub-h4:first-child {
+  margin-top: 0;
+}
+
+.rf-chip-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.75rem;
+}
+
+.rf-ing-chip {
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.28rem 0.6rem;
+  border-radius: 8px;
+  background: var(--rf-slate-100);
+  color: var(--rf-navy-900);
+}
+
+.rf-kv-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.rf-kv-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.65rem 0.85rem;
+  background: var(--rf-slate-50);
+  border: 1px solid var(--rf-slate-200);
+  border-radius: 10px;
+  font-size: 0.86rem;
+}
+
+.rf-kv-row span {
+  color: var(--rf-slate-600);
+}
+
+.rf-kv-row strong {
+  color: var(--rf-navy-900);
+  font-weight: 700;
+}
+
+.rf-plain-list {
+  padding-left: 1.15rem;
+  margin: 0 0 0.75rem;
+  font-size: 0.86rem;
+  color: var(--rf-slate-600);
+  line-height: 1.55;
+}
+
+@media (max-width: 992px) {
+  .rf-nutri-grid-2,
+  .rf-nutri-grid-3 {
+    grid-template-columns: 1fr;
+  }
+}

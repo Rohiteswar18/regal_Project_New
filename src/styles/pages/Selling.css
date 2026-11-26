@@ -1,0 +1,117 @@
+/* Selling.css */
+.selling-page {
+  min-height: 100vh;
+  background: var(--rf-slate-50);
+  padding-bottom: 4.5rem;
+}
+
+.selling-content {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 1.75rem;
+  max-width: 1340px;
+  margin: -1.5rem auto 0;
+  padding: 0 1.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.selling-left,
+.selling-right {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.selling-gate-container {
+  max-width: 1200px;
+  margin: -1.75rem auto 0;
+  padding: 0 1.5rem;
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 0.95fr 1.15fr;
+  gap: 1.75rem;
+  align-items: stretch;
+}
+
+.selling-login-card {
+  background: var(--rf-white);
+  border: 1px solid var(--rf-slate-200);
+  border-radius: 22px;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  box-shadow: var(--rf-shadow-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.selling-login-card h2 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--rf-navy-900);
+  margin-bottom: 0.5rem;
+}
+
+.selling-login-card p {
+  color: var(--rf-slate-500);
+  font-size: 0.94rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  max-width: 360px;
+}
+
+.selling-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.selling-benefit-card {
+  background: var(--rf-white);
+  border: 1px solid var(--rf-slate-200);
+  border-radius: 18px;
+  padding: 1.35rem;
+  box-shadow: var(--rf-shadow-sm);
+}
+
+.benefit-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 11px;
+  background: linear-gradient(135deg, var(--rf-navy-900) 0%, var(--rf-blue-600) 100%);
+  color: #F4C94E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.85rem;
+}
+
+.selling-benefit-card h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--rf-navy-900);
+  margin: 0 0 0.35rem;
+}
+
+.selling-benefit-card p {
+  font-size: 0.85rem;
+  color: var(--rf-slate-600);
+  line-height: 1.5;
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .selling-content,
+  .selling-gate-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .selling-benefits-grid {
+    grid-template-columns: 1fr;
+  }
+}

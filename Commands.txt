@@ -1,0 +1,5 @@
+cd C:\Users\Sande\OneDrive\Desktop\regal-main
+npm start
+
+cd C:\Users\Sande\OneDrive\Desktop\regal-main\backend
+node index.js

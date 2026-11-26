@@ -1,0 +1,198 @@
+/* AddSellingModal.css */
+.add-selling-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(7, 19, 38, 0.72);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  padding: 1rem;
+}
+
+.add-selling-modal {
+  background: var(--rf-white);
+  border-radius: 22px;
+  width: 100%;
+  max-width: 580px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 25px 50px rgba(7, 19, 38, 0.35);
+  border: 1px solid rgba(212, 175, 55, 0.45);
+}
+
+.add-selling-modal .modal-header {
+  padding: 1.35rem 1.65rem;
+  border-bottom: 1px solid var(--rf-slate-200);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.add-selling-modal .modal-header h2 {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--rf-navy-900);
+  margin: 0 0 0.2rem;
+}
+
+.add-selling-modal .modal-header p {
+  font-size: 0.85rem;
+  color: var(--rf-slate-500);
+  margin: 0;
+}
+
+.add-selling-modal .close-btn {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--rf-slate-100);
+  border: 1px solid var(--rf-slate-200);
+  color: var(--rf-slate-600);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.add-selling-form {
+  padding: 1.5rem 1.65rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.add-selling-form .form-group label {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--rf-slate-600);
+  margin-bottom: 0.45rem;
+}
+
+.type-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.6rem;
+}
+
+.type-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.7rem 0.5rem;
+  border-radius: 12px;
+  border: 1px solid var(--rf-slate-200);
+  background: var(--rf-slate-50);
+  color: var(--rf-slate-700);
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.type-btn.active {
+  background: linear-gradient(135deg, var(--rf-navy-900) 0%, var(--rf-blue-600) 100%);
+  color: white;
+  border-color: transparent;
+}
+
+.add-selling-form .form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.add-selling-form input,
+.add-selling-form textarea,
+.add-selling-form select {
+  width: 100%;
+  padding: 0.7rem 0.85rem;
+  border: 1px solid var(--rf-slate-200);
+  border-radius: 10px;
+  font-size: 0.92rem;
+  color: var(--rf-navy-900);
+  background: var(--rf-slate-50);
+}
+
+.add-selling-form input:focus,
+.add-selling-form textarea:focus,
+.add-selling-form select:focus {
+  outline: none;
+  border-color: var(--rf-blue-600);
+  background: var(--rf-white);
+}
+
+.price-input-group {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.price-input-group .currency {
+  font-weight: 800;
+  color: var(--rf-navy-900);
+  padding: 0 0.25rem;
+}
+
+.price-input-group select {
+  width: 115px;
+  flex-shrink: 0;
+}
+
+.total-display {
+  padding: 0.7rem 0.9rem;
+  border-radius: 10px;
+  background: rgba(11, 31, 58, 0.05);
+  border: 1px solid var(--rf-slate-200);
+  font-weight: 800;
+  color: var(--rf-navy-900);
+}
+
+.error-message {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  background: rgba(239, 68, 68, 0.08);
+  color: #DC2626;
+  font-size: 0.86rem;
+}
+
+.add-selling-form .form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  padding-top: 0.5rem;
+}
+
+.cancel-btn {
+  padding: 0.75rem 1.25rem;
+  border-radius: 10px;
+  border: 1px solid var(--rf-slate-200);
+  background: var(--rf-slate-100);
+  color: var(--rf-slate-700);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.submit-btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(135deg, #D4AF37 0%, #F4C94E 100%);
+  color: #071326;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .type-buttons,
+  .add-selling-form .form-row {
+    grid-template-columns: 1fr;
+  }
+}

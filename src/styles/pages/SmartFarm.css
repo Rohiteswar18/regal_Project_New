@@ -1,0 +1,413 @@
+/* SmartFarm.css */
+.rf-smart-page {
+  min-height: 100vh;
+  background: var(--rf-slate-50);
+  padding-bottom: 4.5rem;
+}
+
+.rf-cluster-switcher {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-top: 0.75rem;
+}
+
+.rf-cluster-pill {
+  padding: 0.55rem 1.05rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: rgba(255, 255, 255, 0.08);
+  color: #E2E8F0;
+  font-size: 0.84rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.rf-cluster-pill:hover {
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.rf-cluster-pill.active {
+  background: linear-gradient(135deg, #D4AF37 0%, #F4C94E 100%);
+  color: #071326;
+  border-color: transparent;
+  font-weight: 700;
+}
+
+.rf-smart-container {
+  max-width: 1280px;
+  margin: -1.75rem auto 0;
+  padding: 0 1.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.rf-cluster-overview-bar {
+  background: var(--rf-white);
+  border: 1px solid var(--rf-slate-200);
+  border-radius: 20px;
+  padding: 1.5rem 1.75rem;
+  box-shadow: var(--rf-shadow-md);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1.75rem;
+}
+
+.rf-cluster-model-tag {
+  display: inline-block;
+  font-family: var(--rf-font-mono);
+  font-size: 0.74rem;
+  font-weight: 600;
+  color: var(--rf-blue-600);
+  background: rgba(37, 99, 235, 0.08);
+  padding: 0.25rem 0.65rem;
+  border-radius: 9999px;
+  margin-bottom: 0.4rem;
+}
+
+.rf-cluster-overview-bar h2 {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--rf-navy-900);
+  margin: 0;
+}
+
+.rf-cluster-kpis {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.rf-ckpi {
+  display: flex;
+  flex-direction: column;
+}
+
+.rf-ckpi span {
+  font-size: 0.75rem;
+  color: var(--rf-slate-500);
+  font-weight: 600;
+}
+
+.rf-ckpi strong {
+  font-size: 1.05rem;
+  color: var(--rf-navy-900);
+  font-weight: 800;
+}
+
+.rf-ckpi strong.emerald {
+  color: var(--rf-emerald-600);
+}
+
+.rf-smart-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-bottom: 1.5rem;
+}
+
+.rf-smart-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  border-radius: 12px;
+  border: 1px solid var(--rf-slate-200);
+  background: var(--rf-white);
+  color: var(--rf-slate-600);
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.rf-smart-tab.active {
+  background: linear-gradient(135deg, var(--rf-navy-900) 0%, var(--rf-blue-600) 100%);
+  color: var(--rf-white);
+  border-color: transparent;
+  box-shadow: 0 8px 20px rgba(11, 31, 58, 0.2);
+}
+
+.rf-smart-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.rf-iot-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.rf-iot-card {
+  background: var(--rf-white);
+  border: 1px solid var(--rf-slate-200);
+  border-radius: 18px;
+  padding: 1.35rem;
+  box-shadow: var(--rf-shadow-sm);
+}
+
+.rf-iot-card-head {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--rf-slate-600);
+  margin-bottom: 0.75rem;
+}
+
+.rf-iot-card-head svg {
+  color: var(--rf-blue-600);
+}
+
+.rf-iot-val {
+  font-family: var(--rf-font-display);
+  font-size: 1.85rem;
+  font-weight: 800;
+  color: var(--rf-navy-900);
+  margin-bottom: 0.4rem;
+}
+
+.rf-iot-note {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0.2rem 0.6rem;
+  border-radius: 9999px;
+}
+
+.rf-iot-note.ok {
+  background: var(--rf-emerald-100);
+  color: #047857;
+}
+
+.rf-iot-note.info {
+  background: rgba(37, 99, 235, 0.1);
+  color: var(--rf-blue-600);
+}
+
+.rf-chart-panel,
+.rf-ml-metrics-card,
+.rf-ml-alerts-card {
+  background: var(--rf-white);
+  border: 1px solid var(--rf-slate-200);
+  border-radius: 20px;
+  padding: 1.65rem;
+  box-shadow: var(--rf-shadow-sm);
+}
+
+.rf-panel-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.15rem;
+}
+
+.rf-panel-head h3,
+.rf-ml-metrics-card h3,
+.rf-ml-alerts-card h3 {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--rf-navy-900);
+  margin: 0 0 0.25rem;
+}
+
+.rf-panel-head p,
+.rf-ml-metrics-card > p,
+.rf-ml-alerts-card > p {
+  font-size: 0.88rem;
+  color: var(--rf-slate-500);
+  margin: 0 0 1.1rem;
+}
+
+.rf-panel-badge {
+  font-family: var(--rf-font-mono);
+  font-size: 0.74rem;
+  font-weight: 600;
+  padding: 0.3rem 0.7rem;
+  border-radius: 9999px;
+  background: var(--rf-slate-100);
+  color: var(--rf-navy-800);
+  white-space: nowrap;
+}
+
+.rf-panel-badge.gold {
+  background: rgba(212, 175, 55, 0.18);
+  color: #926B0C;
+}
+
+.rf-svg-chart-wrap {
+  background: var(--rf-slate-50);
+  border: 1px solid var(--rf-slate-200);
+  border-radius: 14px;
+  padding: 0.75rem;
+}
+
+.rf-svg-chart {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.rf-ml-stat-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.rf-ml-stat-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.9rem 1rem;
+  background: var(--rf-slate-50);
+  border: 1px solid var(--rf-slate-200);
+  border-radius: 12px;
+  font-size: 0.92rem;
+}
+
+.rf-ml-stat-row span {
+  color: var(--rf-slate-600);
+  font-weight: 500;
+}
+
+.rf-ml-stat-row strong {
+  color: var(--rf-navy-900);
+  font-weight: 800;
+}
+
+.rf-alert-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.rf-alert-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+  padding: 1rem 1.1rem;
+  border-radius: 14px;
+  border: 1px solid;
+}
+
+.rf-alert-box.ok {
+  background: rgba(16, 185, 129, 0.07);
+  border-color: rgba(16, 185, 129, 0.25);
+}
+
+.rf-alert-box.ok .rf-alert-icon {
+  color: var(--rf-emerald-600);
+}
+
+.rf-alert-box.warn {
+  background: rgba(245, 158, 11, 0.08);
+  border-color: rgba(245, 158, 11, 0.3);
+}
+
+.rf-alert-box.warn .rf-alert-icon {
+  color: #D97706;
+}
+
+.rf-alert-box h4 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--rf-navy-900);
+  margin: 0 0 0.2rem;
+}
+
+.rf-alert-box p {
+  font-size: 0.85rem;
+  color: var(--rf-slate-600);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.rf-price-highlights {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.rf-price-highlights > div {
+  background: var(--rf-slate-50);
+  border: 1px solid var(--rf-slate-200);
+  border-radius: 12px;
+  padding: 0.75rem;
+  text-align: center;
+}
+
+.rf-price-highlights span {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--rf-slate-500);
+  margin-bottom: 0.2rem;
+}
+
+.rf-price-highlights strong {
+  font-size: 1rem;
+  color: var(--rf-navy-900);
+  font-weight: 800;
+}
+
+.rf-pipeline-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.rf-pipeline-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  padding: 0.85rem 1rem;
+  background: var(--rf-slate-50);
+  border: 1px solid var(--rf-slate-200);
+  border-radius: 12px;
+}
+
+.rf-pipeline-item svg {
+  color: var(--rf-blue-600);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.rf-pipeline-item strong {
+  display: block;
+  font-size: 0.92rem;
+  color: var(--rf-navy-900);
+}
+
+.rf-pipeline-item span {
+  font-size: 0.82rem;
+  color: var(--rf-slate-500);
+}
+
+.rf-smart-cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+@media (max-width: 992px) {
+  .rf-smart-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .rf-iot-cards,
+  .rf-price-highlights {
+    grid-template-columns: 1fr;
+  }
+}

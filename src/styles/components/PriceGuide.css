@@ -1,0 +1,79 @@
+/* PriceGuide.css */
+.price-guide-card {
+  background: var(--rf-white);
+  border: 1px solid var(--rf-slate-200);
+  border-radius: 20px;
+  padding: 1.5rem;
+  box-shadow: var(--rf-shadow-sm);
+}
+
+.price-guide-head {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--rf-navy-900);
+  margin-bottom: 1.1rem;
+}
+
+.price-guide-head svg {
+  color: var(--rf-gold-600);
+}
+
+.price-guide-head h3 {
+  font-size: 1.15rem;
+  font-weight: 800;
+  margin: 0;
+}
+
+.price-guide-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.price-item {
+  background: var(--rf-slate-50);
+  border: 1px solid var(--rf-slate-200);
+  border-radius: 14px;
+  padding: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.price-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: rgba(11, 31, 58, 0.08);
+  color: var(--rf-navy-900);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.price-content h4 {
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: var(--rf-navy-900);
+  margin: 0 0 0.2rem;
+}
+
+.price-amount {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--rf-blue-600);
+  margin: 0 0 0.2rem;
+}
+
+.price-desc {
+  font-size: 0.8rem;
+  color: var(--rf-slate-500);
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .price-guide-grid {
+    grid-template-columns: 1fr;
+  }
+}

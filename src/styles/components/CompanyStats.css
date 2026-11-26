@@ -1,0 +1,44 @@
+/* CompanyStats.css */
+.sell-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.sell-stat-card {
+  background: var(--rf-white);
+  border: 1px solid var(--rf-slate-200);
+  border-radius: 18px;
+  padding: 1.25rem;
+  box-shadow: var(--rf-shadow-sm);
+}
+
+.sell-stat-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+}
+
+.sell-stat-card h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--rf-navy-900);
+  margin: 0 0 0.2rem;
+}
+
+.sell-stat-card p {
+  font-size: 0.82rem;
+  color: var(--rf-slate-500);
+  font-weight: 600;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .sell-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

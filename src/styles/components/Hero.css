@@ -1,0 +1,347 @@
+/* Hero.css */
+.rf-hero {
+  position: relative;
+  min-height: 92vh;
+  padding: 7.5rem 1.5rem 4.5rem;
+  display: flex;
+  align-items: center;
+  background: radial-gradient(circle at 80% 15%, rgba(37, 99, 235, 0.25) 0%, transparent 45%),
+    radial-gradient(circle at 15% 85%, rgba(212, 175, 55, 0.16) 0%, transparent 42%),
+    linear-gradient(145deg, #071326 0%, #0B1F3A 55%, #13315C 100%);
+  overflow: hidden;
+}
+
+.rf-hero-grid-bg {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: radial-gradient(ellipse at center, black 45%, transparent 90%);
+  pointer-events: none;
+}
+
+.rf-hero-container {
+  position: relative;
+  z-index: 2;
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.15fr 0.95fr;
+  gap: 3.25rem;
+  align-items: center;
+}
+
+.rf-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.45rem 1rem;
+  border-radius: 9999px;
+  background: rgba(212, 175, 55, 0.14);
+  border: 1px solid rgba(244, 201, 78, 0.4);
+  color: #F4C94E;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.rf-hero-title {
+  font-size: clamp(2.5rem, 5vw, 4.1rem);
+  font-weight: 800;
+  color: #FFFFFF;
+  line-height: 1.08;
+  margin-bottom: 1.35rem;
+}
+
+.rf-hero-gold {
+  background: linear-gradient(135deg, #D4AF37 0%, #FDE047 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.rf-hero-description {
+  font-size: 1.08rem;
+  color: rgba(226, 232, 240, 0.9);
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  max-width: 600px;
+}
+
+.rf-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-bottom: 2rem;
+}
+
+.rf-hero-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.95rem 1.75rem;
+  border-radius: 12px;
+  border: none;
+  background: linear-gradient(135deg, #D4AF37 0%, #F4C94E 100%);
+  color: #071326;
+  font-weight: 800;
+  font-size: 0.95rem;
+  cursor: pointer;
+  box-shadow: 0 10px 28px rgba(212, 175, 55, 0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.rf-hero-btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 34px rgba(212, 175, 55, 0.45);
+}
+
+.rf-hero-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.95rem 1.65rem;
+  border-radius: 12px;
+  border: 1.5px solid rgba(255, 255, 255, 0.28);
+  background: rgba(255, 255, 255, 0.08);
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+  transition: all 0.2s ease;
+}
+
+.rf-hero-btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.16);
+  border-color: #F4C94E;
+  transform: translateY(-2px);
+}
+
+.rf-hero-btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.95rem 1.3rem;
+  border-radius: 12px;
+  border: 1px solid rgba(59, 130, 246, 0.4);
+  background: rgba(37, 99, 235, 0.18);
+  color: #BFDBFE;
+  font-weight: 600;
+  font-size: 0.92rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.rf-hero-btn-ghost:hover {
+  background: rgba(37, 99, 235, 0.32);
+  color: #FFFFFF;
+}
+
+.rf-hero-trust-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.25rem;
+}
+
+.rf-trust-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: #CBD5E1;
+}
+
+.rf-trust-chip svg {
+  color: #F4C94E;
+}
+
+/* Telemetry Panel */
+.rf-telemetry-card {
+  background: rgba(15, 23, 42, 0.72);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 22px;
+  padding: 1.65rem;
+  box-shadow: 0 28px 60px rgba(0, 0, 0, 0.4);
+  color: #FFFFFF;
+}
+
+.rf-telemetry-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.rf-live-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-family: var(--rf-font-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #34D399;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.35rem;
+}
+
+.rf-live-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #10B981;
+  box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.22);
+}
+
+.rf-telemetry-head h3 {
+  font-size: 1.12rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.rf-telemetry-link {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: #F4C94E;
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0.42rem 0.75rem;
+  border-radius: 8px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.2s ease;
+}
+
+.rf-telemetry-link:hover {
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.rf-sensor-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.85rem;
+  margin-bottom: 1.25rem;
+}
+
+.rf-sensor-box {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 0.95rem 1rem;
+}
+
+.rf-sensor-label {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.75rem;
+  color: #94A3B8;
+  margin-bottom: 0.35rem;
+}
+
+.rf-sensor-value {
+  font-family: var(--rf-font-display);
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: #FFFFFF;
+  margin-bottom: 0.25rem;
+}
+
+.rf-sensor-status {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.15rem 0.5rem;
+  border-radius: 9999px;
+}
+
+.rf-sensor-status.ok {
+  background: rgba(16, 185, 129, 0.16);
+  color: #6EE7B7;
+}
+
+.rf-sensor-status.up {
+  background: rgba(244, 201, 78, 0.16);
+  color: #FDE047;
+}
+
+.rf-supply-strip {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 0.95rem 1rem;
+}
+
+.rf-supply-strip-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.76rem;
+  color: #94A3B8;
+  margin-bottom: 0.7rem;
+  flex-wrap: wrap;
+}
+
+.rf-supply-strip-head strong {
+  color: #E2E8F0;
+  font-family: var(--rf-font-mono);
+}
+
+.rf-supply-steps {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.35rem;
+}
+
+.rf-supply-steps span {
+  text-align: center;
+  font-size: 0.68rem;
+  font-weight: 600;
+  padding: 0.4rem 0.25rem;
+  border-radius: 7px;
+  background: rgba(255, 255, 255, 0.05);
+  color: #94A3B8;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.rf-supply-steps span.done {
+  background: rgba(16, 185, 129, 0.16);
+  color: #6EE7B7;
+  border-color: rgba(16, 185, 129, 0.28);
+}
+
+.rf-supply-steps span.active {
+  background: rgba(244, 201, 78, 0.18);
+  color: #FDE047;
+  border-color: rgba(244, 201, 78, 0.4);
+}
+
+@media (max-width: 1024px) {
+  .rf-hero-container {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .rf-hero {
+    padding: 6.5rem 1rem 3.5rem;
+  }
+
+  .rf-supply-steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -1,0 +1,53 @@
+/* FAQ.css */
+.faq-card {
+  background: var(--rf-white);
+  border: 1px solid var(--rf-slate-200);
+  border-radius: 20px;
+  padding: 1.5rem;
+  box-shadow: var(--rf-shadow-sm);
+}
+
+.faq-head {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--rf-navy-900);
+  margin-bottom: 1rem;
+}
+
+.faq-head svg {
+  color: var(--rf-blue-600);
+}
+
+.faq-head h3 {
+  font-size: 1.15rem;
+  font-weight: 800;
+  margin: 0;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.faq-item {
+  background: var(--rf-slate-50);
+  border: 1px solid var(--rf-slate-200);
+  border-radius: 12px;
+  padding: 1rem 1.15rem;
+}
+
+.faq-item h4 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--rf-navy-900);
+  margin: 0 0 0.3rem;
+}
+
+.faq-item p {
+  font-size: 0.86rem;
+  color: var(--rf-slate-600);
+  line-height: 1.55;
+  margin: 0;
+}
